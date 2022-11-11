@@ -28,13 +28,16 @@
             multiplicationMatrixDiv.style.gridTemplateColumns = `repeat(${columnCount},40px)`;
         }
         //controller
-        // function expandMatrix(desired){
-        //     columnCount = desired;
-        //     multiplicationMatrix = [];
-        //     for (let i = 0; i < columnCount; i++){
-        //         for (let j = 0; j < columnCount; j++)
-        //         multiplicationMatrix.push(i * j)
-        //     }
-        // }
+        function expandMatrix(desiredValue){
+            columnCount = desiredValue;
+            multiplicationMatrix = [];
+            for (i = 1; i <= desiredValue; i++){
+                for (j = 1; j <= desiredValue; j++){
+                    multiplicationMatrix.push(i * j);
+                }
+            }
+            console.log(desiredValue);
+            show();
+        }
     </script>
 </body>
